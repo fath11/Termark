@@ -84,5 +84,15 @@ int main(int argc, char *argv[]) {
     }
   }
 
+  // No flag is provided
+  if (optind == 1) {
+    for (int i = 0; i < config_len; i++) {
+      if (strcmp(config[i]->name, argv[1]) == 0) {
+          printf("%s", config[i]->path);
+        break;
+      }
+    }
+  }
+
   return EXIT_SUCCESS;
 }
