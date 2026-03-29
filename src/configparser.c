@@ -17,6 +17,7 @@
  *
  * */
 void parseConfig(FILE *stream, struct Mark *config[], int *config_len) {
+
   int config_i = 0;
 
   struct Mark *token = malloc(sizeof(struct Mark));
