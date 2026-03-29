@@ -1,5 +1,5 @@
-.PHONY: all
-all: src/main.c src/configparser.c
+.PHONY: build
+build: src/main.c src/configparser.c
 	clang src/main.c src/configparser.c -o bin/termark
 
 .PHONY: clean
